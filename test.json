@@ -1,0 +1,35 @@
+{
+  "info": {
+    "name": "Sample Postman Collection"
+  },
+
+  "item": [{
+    "name": "A simple GET request",
+    "event": [{
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": ["tests['response code is 200'] = (responseCode.code === 200);"]
+      }
+    }],
+    "request": {
+      "url": "http://test.scalfs.com/index.html",
+      "method": "GET"
+    }
+  },
+  {
+    "name": "GET request 2",
+    "event": [{
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": ["tests['response code is 200'] = (responseCode.code === 200);"]
+      }
+    }],
+    "request": {
+      "url": "http://test.scalfs.com/test",
+      "method": "GET"
+    }
+  }]
+}
+
